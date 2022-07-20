@@ -22,7 +22,7 @@ def list_items(request):
 
 def add_items(request):
     form = StockCreateForm(request.POST or None)
-    if form.is_valid():
+    if form.is_valid() and form:
         form.save()
         return redirect(list_items)
     context = {

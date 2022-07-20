@@ -6,4 +6,4 @@ import random
 class StockCreateForm(forms.ModelForm):
     class Meta:
         model = Stock
-        fields = ["id",'category','item_name', 'quantity']
+        fields = ['category','item_name', 'quantity']
